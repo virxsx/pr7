@@ -1,0 +1,379 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #dddddd;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 3px solid #ccc;
+    border-top: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body.loaded #preloader {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.about-me-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-me-code-bg {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    max-width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-code-bg img {
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    width: 50%;
+    opacity: 0.6;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about-me-info {
+    padding-top: 250px;
+}
+
+.about-me-info-1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 67px;
+    color: #000000;
+}
+
+.about-me-info-2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.about-me-info-3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.about-me-story {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000000;
+    width: 70%;
+    margin: 0;
+}
+
+.about-me-story-img {
+    width: 96px;
+}
+
+.about-me-story-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-me-story-container img {
+    margin-right: 20px;
+}
+
+.skills-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    color: #312c28;
+}
+
+.cards {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.skill-card {
+    background-color: #21201d;
+    width: 15%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.skill-card img {
+    width: 50%;
+}
+
+.skill-card span {
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: -20px;
+    text-transform: uppercase;
+}
+
+.works-text {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+}
+
+.work-card {
+    position: relative;
+    width: 27%;
+    height: 320px;
+    left: 0;
+    display: flex;
+}
+
+.work-main {
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    margin-left: 0px;
+}
+
+.work-text {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.work-text-line {
+    width: 200px;
+    border: 1px solid #696764;
+}
+
+.work-text-1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+}
+
+.work-text-2 {
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #f0e3ca;
+    text-transform: uppercase;
+}
+
+.work-text-4 {
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    width: 200px;
+    color: #f0e3ca;
+}
+
+.work-text-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #f0e3ca;
+    width: 110px;
+    height: 40px;
+    background-color: #322f2e;
+}
+
+.footer-col-text-1 {
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    color: #f0e3ca;
+    padding-top: 20px;
+}
+
+.footer-col-text-2 {
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+    color: #ff8303;
+}
+    .footer-col-text-mail {
+        font-family: 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    .footer-col-text-git {
+        font-family: 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 25px;
+        color: #000000;
+        align-items: center;
+    }
+
+    .footer-col-text-git img {
+        width: 32px;
+    }
+
+    footer {
+        padding-top: 100px;
+    }
+
+    @media (max-width: 576px) {
+        .about-me-info {
+            padding-top: 150px;
+        }
+
+        .about-me-info-1 {
+            font-size: 48px;
+        }
+
+        .about-me-info-2 {
+            font-size: 32px;
+        }
+
+        .about-me-info-3 {
+            font-size: 16px;
+        }
+
+        .about-me-code-bg {
+            padding-top: 50px;
+            padding-left: 100px;
+            font-size: 14px;
+        }
+
+        .about-me-code-bg img {
+            width: 100%;
+        }
+
+        .about-me-story {
+            font-size: 16px;
+        }
+
+        .about-me-story-img {
+            width: 64px;
+        }
+
+        .cards {
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .skill-card {
+            padding: 100px;
+        }
+
+        .work-card {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .work-main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            left: 0;
+            padding-top: 20px;
+        }
+
+        .footer-main {
+            padding-top: 0;
+        }
+    }
+
+    @media (min-width: 577px) and (max-width: 1024px) {
+        .about-me-story {
+            font-size: 20px;
+        }
+
+        .skill-card {
+            width: 15%;
+            height: 200px;
+            border-radius: 10%;
+        }
+
+        .skill-card img {
+            width: 64px;
+        }
+
+        .skill-card span {
+            font-size: 24px;
+        }
+    }

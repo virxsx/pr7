@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <script>
+window.onload = function() {
+  setTimeout(function() {
+    document.querySelector('body').classList.add('loaded');
+  }, 3000);
+}
+
+    </script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1B1A17;">
+            <div class="container active">
+                <a class="navbar-brand" href="#"><span style="color: rgba(255, 131, 3, 1)">Virxsx</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Перемикач навігації">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#aboutme">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contact">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about-me-section">
+
+
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 col-md-4 mb-4 col-12 align-items-center text-white about-me-info" id="aboutme">
+                        <p class="about-me-info-1">Bugaenko Oleksandr</p>
+                        <p class="about-me-info-2">Back-End Developer</p>
+                        <p class="about-me-info-3">Back-end magician seeking innovative projects to conjure up powerful and seamless technology
+                            for all.</p>
+                    </div>
+                 
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="about-me-story-container">
+                <img src="images/Logo.png" class="about-me-story-img" alt="">
+                <p class="about-me-story">A few years ago, I became interested in developing websites and interfaces. Since then, I have been steadily improving my skills. Now I am developing websites and web applications to order or for myself.</p>
+            </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <p class="skills-text">My Skills</p>
+                <div class="cards">
+                    <div class="skill-card">
+                        <img src="images/htmlicon.png
+                        " alt="">
+                        <span><br>html5</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/cssicon.png
+                        " alt="">
+                        <span><br>css3</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/Сlogo.png" 
+                         width="128px"alt="">
+                        <span style="text-transform: none;"><br>C</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/sharplogo.png
+                        " width="128px" alt="">
+                        <span><br>c#</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/giticon.png
+                        " alt="">
+                        <span><br>git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+                <div class="row justify-content-evenly footer-main">
+                    <div class="col-sm-4 col-md-4 mb-4 col-8 text-white">
+                <a class="navbar-brand" href="#"><span style="color: rgba(255, 131, 3, 1)">Virxsx</a>
+
+                        <p class="footer-col-text-1">If you liked my work and you need me, I'm ready to talk to you.</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 mb-4 col-8 align-items-center ">
+                        <p class="footer-col-text-2">Contacts</p>
+                        <p class="footer-col-text-mail">📧 sashkobugaenko@gmail.com</p>
+                        <p class="footer-col-text-git"><img src="images/footergit.png" alt=""> Virxsx</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="preloader">
+        <div class="loader"></div>
+      </div>
+    <script src="script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
